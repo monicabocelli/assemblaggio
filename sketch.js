@@ -7,11 +7,16 @@ var myImage1;
 var myImage2;
 var Cover;
 
+var fontMetaRegular, fontMetaBold, fontMetaMedium, fontOCRB;
 
 function preload() {
    Cover = loadImage("images/gif-a-2-orizzontale.gif");
    myImage1 = loadImage("images/prova1.jpg");    
    myImage2 = loadImage("images/prova2.jpg");
+   fontMetaRegular = loadFont("assets/MetaPro-Normal.otf");
+   fontMetaBold = loadFont("assets/MetaPro-Bold.otf");
+   fontMetaMedium = loadFont("assets/MetaPro-Medium.otf");
+   fontOCRB = loadFont("assets/OCRBStd.otf");
 }
     
 function setup(){
@@ -29,7 +34,8 @@ function draw(){
      image(Cover,0,0,windowWidth,windowHeight); 
         
      } else if (energy > 0.5 && energy < maxEnergy){
-     
+        
+     textFont(fontOCRB);
      textSize(height/22);
      textAlign(CENTER);
      textStyle(BOLD);
@@ -37,7 +43,7 @@ function draw(){
      noStroke();
      text("EARTHQUAKE INTENSITY", width/2,height - height/1.2);     
  
-        
+    textFont(fontMetaBold);    
     fill(0);
     noStroke();
     textSize(height/30);
@@ -66,12 +72,13 @@ function draw(){
     //magnitude indication
     fill(0);
     noStroke();    
-    
+     textFont(fontMetaRegular);   
     textSize(height/40);
     textAlign(CENTER);
     textStyle(NORMAL);
     text("Magnitude", width/2, height - height/5);
-        
+    
+     textFont(fontMetaMedium);   
     textSize(height/20);
     textAlign(CENTER);
     textStyle(BOLD);
