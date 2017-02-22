@@ -1,7 +1,7 @@
 var dots = [];
 var energy = 0; //starting value of energy
 var singleShake = 0;
-var maxEnergy= 1000; //max energy for eathquake
+var maxEnergy= 500; //max energy for eathquake
 
 var myImage1;
 var myImage2;
@@ -22,7 +22,7 @@ function setup(){
 function draw(){
     background(204);    
     
-    var magnitude = int(map(energy, 0, 1000, 0, 10)); 
+    var magnitude = int(map(energy, 0, 500, 0, 10)); 
     
     if (energy < 0.5) {
         
@@ -35,7 +35,7 @@ function draw(){
      textStyle(BOLD);
      fill(0);
      noStroke();
-     text("EARTHQUAKE INTENSITY", width/5,height - height/2);     
+     text("EARTHQUAKE INTENSITY", width/2,height - height/1.5);     
          
     //CREATE THE ELLIPSE AREA
     var x = width/2;
@@ -87,7 +87,16 @@ function draw(){
   stroke(250);
   rectMode(CENTER);
   rect(width/1.3, height/9, width/7, width/7);
+  textSize(height/20);
+  textAlign(CENTER);
+  textStyle(BOLD);
+  text("SEE RESULT",width/1.3, height/9);
+  
   rect(width/4, height/9, width/7, width/7);
+  textSize(height/20);
+  textAlign(CENTER);
+  textStyle(BOLD);
+  text("TRY AGAIN",width/4, height/9);
   
    if(touchX > width/1.3 - width/7 && touchX < width/1.3 + width/7 && touchY > height/9 - width/7 && touchY <  height/9 + width/7){   
        
