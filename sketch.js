@@ -20,7 +20,7 @@ function setup(){
 function draw(){
     background(204);    
     
-    var magnitude = map(energy, 0, 1000, 0, 10)); 
+    var magnitude = map(energy, 0, 1000, 0, 10); 
     
     if (energy < 0.5) {
         
