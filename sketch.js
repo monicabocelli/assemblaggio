@@ -8,8 +8,8 @@ var myImage2;
 var Cover;
 
 function preload() {
-  // Cover = loadImage("images/gif-a-2-orizzontale.gif");
-   Cover = loadImage("images/Tavola disegno 18 copia 3.png");
+   Cover = loadImage("images/gif-a-2-orizzontale.gif");
+  // Cover = loadImage("images/Tavola disegno 18 copia 3.png");
    myImage1 = loadImage("images/prova1.jpg");    
    myImage2 = loadImage("images/prova2.jpg");
 }
