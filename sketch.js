@@ -1,7 +1,7 @@
 var dots = [];
 var energy = 0; //starting value of energy
 var singleShake = 0;
-var maxEnergy= 700; //max energy for eathquake
+var maxEnergy= 800; //max energy for eathquake
 
 var myImage1;
 var myImage2;
@@ -21,7 +21,7 @@ function setup(){
 function draw(){
     background(204);    
     
-    var magnitude = int(map(energy, 0, 700, 0, 10)); 
+    var magnitude = int(map(energy, 0, 800, 0, 10)); 
     
     if (energy < 0.5) {
         
@@ -104,10 +104,23 @@ function draw(){
     if (magnitude <= 5){
          
          image(myImage1,0,0,windowWidth,windowHeight);
-         
+         textSize(height/20);
+         textAlign(CENTER);
+         textStyle(BOLD);
+         text("GO BACK", width/15, height/2);
+         if(touchX >  width/15 - width/5 && touchX <  width/15 + width/5 && touchY >height/2 - width/5 && touchY < height/2+ width/5){   
+          energy = 0;
+         }
      } else {
          
          image(myImage2,0,0,windowWidth,windowHeight);
+         textSize(height/20);
+         textAlign(CENTER);
+         textStyle(BOLD);
+         text("GO BACK", width/15, height/2);
+         if(touchX >  width/15 - width/5 && touchX <  width/15 + width/5 && touchY >height/2 - width/5 && touchY < height/2+ width/5){   
+          energy = 0;
+         }
      } 
        
    }   
