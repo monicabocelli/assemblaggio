@@ -2,7 +2,6 @@ var dots = [];
 var energy = 0; //starting value of energy
 var singleShake = 0;
 var maxEnergy= 1000; //max energy for eathquake
-
 var myImage1;
 var myImage2;
 var Cover;
@@ -35,15 +34,14 @@ function draw(){
      fill(0);
      noStroke();
      text("EARTHQUAKE INTENSITY", width/2,height - height/1.2);     
-     
-
+ 
+        
   fill(0);
   noStroke();
   textSize(height/30);
   textAlign(CENTER);
   textStyle(BOLD);
   text("SEE RESULT",width/1.3, height - height/15);
-  
 
   fill(0);
   noStroke();
@@ -101,7 +99,7 @@ function draw(){
    
     if(touchX > width/1.3 - width/7 && touchX < width/1.3 + width/7 && touchY > height - height/15- width/7 && touchY < height - height/15 + width/7){   
        
-    if (magnitude <= 5){
+      if (magnitude <= 5){
          
          image(myImage1,0,0,windowWidth,windowHeight);
          textSize(height/30);
@@ -110,14 +108,14 @@ function draw(){
          if(touchX >  width/15 - width/5 && touchX <  width/15 + width/5 && touchY >height/2 - width/5 && touchY < height/2+ width/5){   
           background(204);
          }
-     } else {
+       } else {
          
          image(myImage2,0,0,windowWidth,windowHeight);
          
          if(touchX >  width/15 - width/5 && touchX <  width/15 + width/5 && touchY >height/2 - width/5 && touchY < height/2+ width/5){   
           background(204);
-         }
-     } 
+          }
+       } 
        
    }   
     
