@@ -21,7 +21,7 @@ function setup(){
 function draw(){
     background(204);    
     
-    var magnitude = int(map(energy, 0, 800, 0, 10)); 
+    var magnitude = map(energy, 0, 800, 0, 10)); 
     
     if (energy < 0.5) {
         
@@ -75,7 +75,7 @@ function draw(){
     textSize(height/20);
     textAlign(CENTER);
     textStyle(BOLD);
-    text(magnitude,width/2, height - height/6.7);
+    text(nfc(magnitude,1,1), width/2, height - height/6.7);
     
         
  } else if(energy >= maxEnergy) {
