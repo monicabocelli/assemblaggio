@@ -72,7 +72,7 @@ function draw(){
     //magnitude indication
     fill(0);
     noStroke();    
-     textFont(fontMetaRegular);   
+    textFont(fontMetaRegular);   
     textSize(height/40);
     textAlign(CENTER);
     textStyle(NORMAL);
@@ -86,17 +86,28 @@ function draw(){
     
         
  } else if(energy >= maxEnergy) {
-         
-    textSize(height/10);
+    textFont(fontMetaBold);      
+    textSize(height/25);
     textAlign(CENTER);
     textStyle(BOLD);
-    text("ALSO THE STRONGEST EARTHQUAKE ISN'T STRONG AS YOU",width/2, height - height/2)
-    textSize(height/20);
-    text("10",width/2, height - height/6.7)
-    energy = maxEnergy;
-    background(204);
+    text("ALSO THE STRONGEST EARTHQUAKE",width/2, height - height/2);
+    text("ISN'T STRONG AS YOU!",width/2, height - height/2);
+    
+    fill(0);
+    noStroke();
+    textSize(height/30);
+    textAlign(CENTER);
+    textStyle(BOLD);
+    text("TRY AGAIN",width/4, height - height/15);
+    
+     if(touchX > width/4 - width/7 && touchX < width/4 + width/7 && touchY > height - height/15 - width/7 && touchY <  height - height/15 + width/7){   
+       
+      background(204);
+      energy = 0;
+       
+      }   
          
-     }
+  }
         
     //draw dots and given methods (actions)
       noStroke();
