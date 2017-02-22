@@ -2,9 +2,11 @@ var dots = [];
 var energy = 0; //starting value of energy
 var singleShake = 0;
 var maxEnergy= 1000; //max energy for eathquake
+
 var myImage1;
 var myImage2;
 var Cover;
+
 
 function preload() {
    Cover = loadImage("images/gif-a-2-orizzontale.gif");
@@ -36,19 +38,19 @@ function draw(){
      text("EARTHQUAKE INTENSITY", width/2,height - height/1.2);     
  
         
-  fill(0);
-  noStroke();
-  textSize(height/30);
-  textAlign(CENTER);
-  textStyle(BOLD);
-  text("SEE RESULT",width/1.3, height - height/15);
+    fill(0);
+    noStroke();
+    textSize(height/30);
+    textAlign(CENTER);
+    textStyle(BOLD);
+    text("SEE RESULT",width/1.3, height - height/15);
 
-  fill(0);
-  noStroke();
-  textSize(height/30);
-  textAlign(CENTER);
-  textStyle(BOLD);
-  text("TRY AGAIN",width/4, height - height/15);
+    fill(0);
+    noStroke();
+    textSize(height/30);
+    textAlign(CENTER);
+    textStyle(BOLD);
+    text("TRY AGAIN",width/4, height - height/15);
   
       
     //CREATE THE ELLIPSE AREA
