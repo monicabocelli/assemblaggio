@@ -42,7 +42,7 @@ function draw(){
   textSize(height/30);
   textAlign(CENTER);
   textStyle(BOLD);
-  text("SEE RESULT",width/1.3, height - height/11);
+  text("SEE RESULT",width/1.3, height - height/13);
   
 
   fill(0);
@@ -50,7 +50,7 @@ function draw(){
   textSize(height/30);
   textAlign(CENTER);
   textStyle(BOLD);
-  text("TRY AGAIN",width/4, height - height/11);
+  text("TRY AGAIN",width/4, height - height/13);
   
       
     //CREATE THE ELLIPSE AREA
@@ -104,22 +104,20 @@ function draw(){
     if (magnitude <= 5){
          
          image(myImage1,0,0,windowWidth,windowHeight);
-         textSize(height/20);
-         textAlign(CENTER);
+         textSize(height/30);
          textStyle(BOLD);
-         text("GO BACK", width/15, height/2);
+         text("BACK", width/15, height/2);
          if(touchX >  width/15 - width/5 && touchX <  width/15 + width/5 && touchY >height/2 - width/5 && touchY < height/2+ width/5){   
-          energy = 0;
+          background(204);
          }
      } else {
          
          image(myImage2,0,0,windowWidth,windowHeight);
-         textSize(height/20);
-         textAlign(CENTER);
+         textSize(height/30);
          textStyle(BOLD);
-         text("GO BACK", width/15, height/2);
+         text("BACK", width/15, height/2);
          if(touchX >  width/15 - width/5 && touchX <  width/15 + width/5 && touchY >height/2 - width/5 && touchY < height/2+ width/5){   
-          energy = 0;
+          background(204);
          }
      } 
        
