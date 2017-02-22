@@ -56,25 +56,6 @@ function draw(){
   textStyle(BOLD);
   text("TRY AGAIN",width/4, height/9);
   
-   if(touchX > width/1.3 - width/7 && touchX < width/1.3 + width/7 && touchY > height/9 - width/7 && touchY <  height/9 + width/7){   
-       
-    if (magnitude <= 5){
-         
-         image(myImage1,0,0,windowWidth,windowHeight);
-         
-     } else {
-         
-         image(myImage2,0,0,windowWidth,windowHeight);
-     } 
-       
-   }   
-    
-   if(touchX > width/4 - width/7 && touchX < width/4 + width/7 && touchY > height/9 - width/7 && touchY <  height/9 + width/7){   
-       
-    background(204);
-    energy = 0;
-       
-   }    
       
     //CREATE THE ELLIPSE AREA
     var x = width/2;
@@ -121,7 +102,26 @@ function draw(){
         dots[i].move();
         dots[i]. display();
        }
-
+   
+    if(touchX > width/1.3 - width/7 && touchX < width/1.3 + width/7 && touchY > height/9 - width/7 && touchY <  height/9 + width/7){   
+       
+    if (magnitude <= 5){
+         
+         image(myImage1,0,0,windowWidth,windowHeight);
+         
+     } else {
+         
+         image(myImage2,0,0,windowWidth,windowHeight);
+     } 
+       
+   }   
+    
+   if(touchX > width/4 - width/7 && touchX < width/4 + width/7 && touchY > height/9 - width/7 && touchY <  height/9 + width/7){   
+       
+    background(204);
+    energy = 0;
+       
+   }    
     
 }
 
