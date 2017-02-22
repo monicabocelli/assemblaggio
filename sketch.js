@@ -42,18 +42,18 @@ function draw(){
   rect(width/1.3, height/9, width/7, width/7);*/
   fill(0);
   noStroke();
-  textSize(height/20);
+  textSize(height/30);
   textAlign(CENTER);
   textStyle(BOLD);
-  text("SEE RESULT",width/1.3, height/9);
+  text("SEE RESULT",width/1.3, height - height/8);
   
 /*  rect(width/4, height/9, width/7, width/7);*/
   fill(0);
   noStroke();
-  textSize(height/20);
+  textSize(height/30);
   textAlign(CENTER);
   textStyle(BOLD);
-  text("TRY AGAIN",width/4, height/9);
+  text("TRY AGAIN",width/4, height - height/8);
   
       
     //CREATE THE ELLIPSE AREA
