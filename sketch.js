@@ -42,7 +42,7 @@ function draw(){
   textSize(height/30);
   textAlign(CENTER);
   textStyle(BOLD);
-  text("SEE RESULT",width/1.3, height - height/9);
+  text("SEE RESULT",width/1.3, height - height/11);
   
 
   fill(0);
@@ -50,7 +50,7 @@ function draw(){
   textSize(height/30);
   textAlign(CENTER);
   textStyle(BOLD);
-  text("TRY AGAIN",width/4, height - height/9);
+  text("TRY AGAIN",width/4, height - height/11);
   
       
     //CREATE THE ELLIPSE AREA
