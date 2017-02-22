@@ -36,7 +36,46 @@ function draw(){
      fill(0);
      noStroke();
      text("EARTHQUAKE INTENSITY", width/2,height - height/1.5);     
+     
+/*    noFill();
+  stroke(250);
+  rectMode(CENTER);
+  rect(width/1.3, height/9, width/7, width/7);*/
+  fill(0);
+  noStroke();
+  textSize(height/20);
+  textAlign(CENTER);
+  textStyle(BOLD);
+  text("SEE RESULT",width/1.3, height/9);
+  
+/*  rect(width/4, height/9, width/7, width/7);*/
+  fill(0);
+  noStroke();
+  textSize(height/20);
+  textAlign(CENTER);
+  textStyle(BOLD);
+  text("TRY AGAIN",width/4, height/9);
+  
+   if(touchX > width/1.3 - width/7 && touchX < width/1.3 + width/7 && touchY > height/9 - width/7 && touchY <  height/9 + width/7){   
+       
+    if (magnitude <= 5){
          
+         image(myImage1,0,0,windowWidth,windowHeight);
+         
+     } else {
+         
+         image(myImage2,0,0,windowWidth,windowHeight);
+     } 
+       
+   }   
+    
+   if(touchX > width/4 - width/7 && touchX < width/4 + width/7 && touchY > height/9 - width/7 && touchY <  height/9 + width/7){   
+       
+    background(204);
+    energy = 0;
+       
+   }    
+      
     //CREATE THE ELLIPSE AREA
     var x = width/2;
     var y = height/2;
@@ -83,44 +122,6 @@ function draw(){
         dots[i]. display();
        }
 
-  noFill();
-  stroke(250);
-  rectMode(CENTER);
-  rect(width/1.3, height/9, width/7, width/7);
-  fill(0);
-  noStroke();
-  textSize(height/20);
-  textAlign(CENTER);
-  textStyle(BOLD);
-  text("SEE RESULT",width/1.3, height/9);
-  
-  rect(width/4, height/9, width/7, width/7);
-  fill(0);
-  noStroke();
-  textSize(height/20);
-  textAlign(CENTER);
-  textStyle(BOLD);
-  text("TRY AGAIN",width/4, height/9);
-  
-   if(touchX > width/1.3 - width/7 && touchX < width/1.3 + width/7 && touchY > height/9 - width/7 && touchY <  height/9 + width/7){   
-       
-    if (magnitude <= 5){
-         
-         image(myImage1,0,0,windowWidth,windowHeight);
-         
-     } else {
-         
-         image(myImage2,0,0,windowWidth,windowHeight);
-     } 
-       
-   }   
-    
-   if(touchX > width/4 - width/7 && touchX < width/4 + width/7 && touchY > height/9 - width/7 && touchY <  height/9 + width/7){   
-       
-    background(204);
-    energy = 0;
-       
-   }   
     
 }
 
