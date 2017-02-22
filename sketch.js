@@ -34,7 +34,7 @@ function draw(){
      textStyle(BOLD);
      fill(0);
      noStroke();
-     text("EARTHQUAKE INTENSITY", width/2,height - height/1.1);     
+     text("EARTHQUAKE INTENSITY", width/2,height - height/1.2);     
      
 
   fill(0);
@@ -42,7 +42,7 @@ function draw(){
   textSize(height/30);
   textAlign(CENTER);
   textStyle(BOLD);
-  text("SEE RESULT",width/1.3, height - height/8);
+  text("SEE RESULT",width/1.3, height - height/9);
   
 
   fill(0);
@@ -50,7 +50,7 @@ function draw(){
   textSize(height/30);
   textAlign(CENTER);
   textStyle(BOLD);
-  text("TRY AGAIN",width/4, height - height/8);
+  text("TRY AGAIN",width/4, height - height/9);
   
       
     //CREATE THE ELLIPSE AREA
@@ -99,7 +99,7 @@ function draw(){
         dots[i]. display();
        }
    
-    if(touchX > width/1.3 - width/7 && touchX < width/1.3 + width/7 && touchY > height/9 - width/7 && touchY <  height/9 + width/7){   
+    if(touchX > width/1.3 - width/7 && touchX < width/1.3 + width/7 && touchY > height - height/9- width/7 && touchY < height - height/9 + width/7){   
        
     if (magnitude <= 5){
          
@@ -112,7 +112,7 @@ function draw(){
        
    }   
     
-   if(touchX > width/4 - width/7 && touchX < width/4 + width/7 && touchY > height/9 - width/7 && touchY <  height/9 + width/7){   
+   if(touchX > width/4 - width/7 && touchX < width/4 + width/7 && touchY > height - height/9 - width/7 && touchY <  height - height/9 + width/7){   
        
     background(204);
     energy = 0;
