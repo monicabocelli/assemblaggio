@@ -167,8 +167,7 @@ function QuakeDots(){
        this.ydot = random(height/2 - d, height/2 + d); 
        }
     ellipse(this.xdot, this.ydot, this.diameter, this.diameter);
-    };
- 
+    }; 
 }
 
 function windowResized(){
