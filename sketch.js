@@ -1,7 +1,7 @@
 var dots = [];
 var energy = 0; //starting value of energy
 var singleShake = 0;
-var maxEnergy= 500; //max energy for eathquake
+var maxEnergy= 700; //max energy for eathquake
 
 var myImage1;
 var myImage2;
@@ -21,7 +21,7 @@ function setup(){
 function draw(){
     background(204);    
     
-    var magnitude = int(map(energy, 0, 500, 0, 10)); 
+    var magnitude = int(map(energy, 0, 700, 0, 10)); 
     
     if (energy < 0.5) {
         
@@ -143,7 +143,7 @@ function QuakeDots(){
     
     this.xdot = random(width/2 - d, width/2 + d); //according to ellipse area
     this.ydot = random(height/2 - d, height/2 + d); //according to ellipse area
-    this.diameter = 6;
+    this.diameter = 7;
     this.speed = 4; //according to magnitude
 
     this.move = function(){
