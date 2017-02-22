@@ -87,12 +87,16 @@ function draw(){
   stroke(250);
   rectMode(CENTER);
   rect(width/1.3, height/9, width/7, width/7);
+  fill(0);
+  noStroke();
   textSize(height/20);
   textAlign(CENTER);
   textStyle(BOLD);
   text("SEE RESULT",width/1.3, height/9);
   
   rect(width/4, height/9, width/7, width/7);
+  fill(0);
+  noStroke();
   textSize(height/20);
   textAlign(CENTER);
   textStyle(BOLD);
@@ -100,7 +104,7 @@ function draw(){
   
    if(touchX > width/1.3 - width/7 && touchX < width/1.3 + width/7 && touchY > height/9 - width/7 && touchY <  height/9 + width/7){   
        
-    if (magnitude <= 6){
+    if (magnitude <= 5){
          
          image(myImage1,0,0,windowWidth,windowHeight);
          
