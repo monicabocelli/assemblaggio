@@ -34,12 +34,9 @@ function draw(){
      textStyle(BOLD);
      fill(0);
      noStroke();
-     text("EARTHQUAKE INTENSITY", width/2,height - height/1.5);     
+     text("EARTHQUAKE INTENSITY", width/2,height - height/1.1);     
      
-/*    noFill();
-  stroke(250);
-  rectMode(CENTER);
-  rect(width/1.3, height/9, width/7, width/7);*/
+
   fill(0);
   noStroke();
   textSize(height/30);
@@ -47,7 +44,7 @@ function draw(){
   textStyle(BOLD);
   text("SEE RESULT",width/1.3, height - height/8);
   
-/*  rect(width/4, height/9, width/7, width/7);*/
+
   fill(0);
   noStroke();
   textSize(height/30);
