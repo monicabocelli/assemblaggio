@@ -83,6 +83,14 @@ function draw(){
     textAlign(CENTER);
     textStyle(BOLD);
     text(nfc(magnitude,1,1), width/2, height - height/6.7);
+        
+        //draw dots and given methods (actions)
+      noStroke();
+      fill(0);
+      for (var i = 0; i < energy * 100; i++){
+        dots[i].move();
+        dots[i]. display();
+       }
     
         
  } else if(energy >= maxEnergy) {
@@ -109,13 +117,6 @@ function draw(){
          
   }
         
-    //draw dots and given methods (actions)
-      noStroke();
-      fill(0);
-      for (var i = 0; i < energy * 100; i++){
-        dots[i].move();
-        dots[i]. display();
-       }
    
     if(touchX > width/1.3 - width/7 && touchX < width/1.3 + width/7 && touchY > height - height/15- width/7 && touchY < height - height/15 + width/7){   
        
