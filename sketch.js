@@ -36,7 +36,7 @@ function draw(){
      } else if (energy > 0.5 && energy < maxEnergy){
         
      textFont(fontOCRB);
-     textSize(height/22);
+     textSize(height/25);
      textAlign(CENTER);
      textStyle(BOLD);
      fill(0);
@@ -99,7 +99,7 @@ function draw(){
     textAlign(CENTER);
     textStyle(BOLD);
     text("ALSO THE STRONGEST EARTHQUAKE",width/2, height - height/2);
-    text("ISN'T STRONG AS YOU!",width/2, height - height/2);
+    text("ISN'T STRONG AS YOU!",width/2, height - height/1.7);
     
     fill(0);
     noStroke();
@@ -110,8 +110,8 @@ function draw(){
     
      if(touchX > width/4 - width/7 && touchX < width/4 + width/7 && touchY > height - height/15 - width/7 && touchY <  height - height/15 + width/7){   
        
-      background(204);
-      energy = 0;
+       image(Cover,0,0,windowWidth,windowHeight); 
+       energy = 0;
        
       }   
          
@@ -127,14 +127,14 @@ function draw(){
          textStyle(BOLD);
          text("BACK", width/15, height/2);
          if(touchX >  width/15 - width/5 && touchX <  width/15 + width/5 && touchY >height/2 - width/5 && touchY < height/2+ width/5){   
-          background(204);
+           image(Cover,0,0,windowWidth,windowHeight);
          }
        } else {
          
          image(myImage2,0,0,windowWidth,windowHeight);
          
          if(touchX >  width/15 - width/5 && touchX <  width/15 + width/5 && touchY >height/2 - width/5 && touchY < height/2+ width/5){   
-          background(204);
+           image(Cover,0,0,windowWidth,windowHeight);
           }
        } 
        
@@ -142,8 +142,8 @@ function draw(){
     
    if(touchX > width/4 - width/7 && touchX < width/4 + width/7 && touchY > height - height/15 - width/7 && touchY <  height - height/15 + width/7){   
        
-    background(204);
-    energy = 0;
+     image(Cover,0,0,windowWidth,windowHeight);
+     energy = 0;
        
    }    
     
