@@ -7,7 +7,9 @@ var Chile;
 var Japan;
 var Indonesia;
 var Mexico;
+
 var Cover;
+
 var fontMetaRegular, fontMetaBold, fontMetaMedium, fontOCRB;
 
 function preload() {
@@ -66,7 +68,7 @@ function draw(){
     //CREATE THE ELLIPSE AREA
     var x = width/2;
     var y = height/2;
-    var r = energy * 2; 
+    var r = energy; 
     
     noFill();
     stroke(0);
@@ -95,10 +97,26 @@ function draw(){
         dots[i].move();
         dots[i]. display();
        }
+        
+         //tap on TRY AGAIN 
+     if(touchX > width/4 - width/7 && touchX < width/4 + width/7 && touchY > height - height/15 - width/7 && touchY <  height - height/15 + width/7){   
+       
+       image(Cover,0,0,windowWidth,windowHeight); 
+       energy = 0;
+       
+      }   
+         
+         //image(myImage1,0,0,windowWidth,windowHeight);
+         //tap on the arrow
+         /*if(touchX >  0  && touchX <  width && touchY > height/2  && touchY < height){   
+           image(Cover,0,0,windowWidth,windowHeight);
+            energy = 0;
+         }*/
        //tap on SEE RESULT
     if(touchX > width/2 && touchX < width && touchY > height - height/15- width/7 && touchY < height){   
        
       if (magnitude <= 6){
+         background(204);
          textFont(fontOCRB);      
          textSize(height/35);
          textAlign(CENTER);
@@ -113,20 +131,7 @@ function draw(){
          textStyle(BOLD);
          text("TRY AGAIN",width/4, height - height/15);
     
-    //tap on TRY AGAIN 
-     if(touchX > width/4 - width/7 && touchX < width/4 + width/7 && touchY > height - height/15 - width/7 && touchY <  height - height/15 + width/7){   
-       
-       image(Cover,0,0,windowWidth,windowHeight); 
-       energy = 0;
-       
-      }   
-         
-         //image(myImage1,0,0,windowWidth,windowHeight);
-         //tap on the arrow
-         /*if(touchX >  0  && touchX <  width && touchY > height/2  && touchY < height){   
-           image(Cover,0,0,windowWidth,windowHeight);
-            energy = 0;
-         }*/
+   
        } else if(magnitude > 6 && magnitude <= 7){
          
          image(myImage2,0,0,windowWidth,windowHeight);
@@ -166,11 +171,6 @@ function draw(){
          }*/
        }
    }   
-   //tap on TRY AGAIN 
-   if(touchX > 0 && touchX < width/2 && touchY > height - height/15 - width/7 && touchY <  height){   
-       
-     image(Cover,0,0,windowWidth,windowHeight);
-     energy = 0;
        
    }  
         
