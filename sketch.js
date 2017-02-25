@@ -4,6 +4,7 @@ var singleShake = 0;
 var maxEnergy= 1000; //max energy for eathquake
 
 var Chile;
+var Japan;
 var Indonesia;
 var Cover;
 
@@ -11,8 +12,11 @@ var fontMetaRegular, fontMetaBold, fontMetaMedium, fontOCRB;
 
 function preload() {
    Cover = loadImage("images/gif-a-2-orizzontale.gif");
-   Chile = loadImage("images/prova1.jpg");    
-   Indonesia = loadImage("images/prova2.jpg");
+   
+   Chile = loadImage("images/prova1.jpg");    //9.5
+   Japan = loadImage("images/prova2.jpg");    //9.0
+   Indonesia = loadImage("images/prova2.jpg"); //8.5
+   
    fontMetaRegular = loadFont("assets/MetaPro-Normal.otf");
    fontMetaBold = loadFont("assets/MetaPro-Bold.otf");
    fontMetaMedium = loadFont("assets/MetaPro-Medium.otf");
@@ -144,13 +148,13 @@ function draw(){
          }        
                  
        } else if(magnitude > 8 && magnitude <= 8.5){
-        image(myImage1,0,0,windowWidth,windowHeight);
+        image(Indonesia,0,0,windowWidth,windowHeight);
          //tap on the arrow
          if(touchX >  0  && touchX <  width && touchY > height/2  && touchY < height){   
            image(Cover,0,0,windowWidth,windowHeight);
          }
        } else if(magnitude > 8.5 && magnitude <= 9){
-         image(Indonesia,0,0,windowWidth,windowHeight);
+         image(Japan,0,0,windowWidth,windowHeight);
          //tap on the arrow
          if(touchX >  0  && touchX <  width && touchY > height/2  && touchY < height){   
            image(Cover,0,0,windowWidth,windowHeight);
