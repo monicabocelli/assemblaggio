@@ -103,7 +103,7 @@ function draw(){
          textSize(height/35);
          textAlign(CENTER);
          textStyle(BOLD);
-         text("C´MON,THESE IS JUST A LITTLE SHAKE",width/2, height - height/2);
+         text("C´MON,THIS IS JUST A LITTLE SHAKE",width/2, height - height/2);
          
          textFont(fontMetaBold);
          fill(0);
