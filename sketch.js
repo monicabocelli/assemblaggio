@@ -7,9 +7,7 @@ var Chile;
 var Japan;
 var Indonesia;
 var Mexico;
-
 var Cover;
-
 var fontMetaRegular, fontMetaBold, fontMetaMedium, fontOCRB;
 
 function preload() {
