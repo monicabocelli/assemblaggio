@@ -82,7 +82,7 @@ function draw(){
     textStyle(NORMAL);
     text("Magnitude", width/2, height - height/5);
     
-     textFont(fontMetaMedium);   
+    textFont(fontMetaMedium);   
     textSize(height/20);
     textAlign(CENTER);
     textStyle(BOLD);
