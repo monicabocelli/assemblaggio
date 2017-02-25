@@ -104,7 +104,7 @@ function draw(){
     textSize(height/35);
     textAlign(CENTER);
     textStyle(BOLD);
-    text("ALSO THE STRONGEST EARTHQUAKE",width/2, height - height/2);
+    text("EVEN THE STRONGEST EARTHQUAKE",width/2, height - height/2);
     text("ISN'T STRONG AS YOU!",width/2, height - height/2.2);
     
     textFont(fontMetaBold);
