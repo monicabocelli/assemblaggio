@@ -226,6 +226,7 @@ function QuakeDots(){
     }; 
 }
 
+
 function windowResized(){
     resizeCanvas(windowWidth,windowHeight);
 }
