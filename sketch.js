@@ -98,7 +98,7 @@ function draw(){
         dots[i]. display();
        }
        //tap on SEE RESULT
-    if(touchX > width/1.3 - width/7 && touchX < width/1.3 + width/7 && touchY > height - height/15- width/7 && touchY < height - height/15 + width/7){   
+    if(touchX > width/2 && touchX < width && touchY > height - height/15- width/7 && touchY < height){   
        
       if (magnitude <= 6){
          
@@ -149,7 +149,7 @@ function draw(){
        }
    }   
    //tap on TRY AGAIN 
-   if(touchX > width/4 - width/7 && touchX < width/4 + width/7 && touchY > height - height/15 - width/7 && touchY <  height - height/15 + width/7){   
+   if(touchX > 0 && touchX < width/2 && touchY > height - height/15 - width/7 && touchY <  height){   
        
      image(Cover,0,0,windowWidth,windowHeight);
      energy = 0;
