@@ -7,13 +7,13 @@ var Chile;
 var Japan;
 var Indonesia;
 var Mexico;
+
 var Cover;
 
 var fontMetaRegular, fontMetaBold, fontMetaMedium, fontOCRB;
 
 function preload() {
    Cover = loadImage("images/gif-a-2-orizzontale.gif");
-   
    Chile = loadImage("images/Chile2.jpg");    //9.5
    Japan = loadImage("images/Japan.jpg");    //9.0
    Indonesia = loadImage("images/Indonesia.jpg"); //8.5
