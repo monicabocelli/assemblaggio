@@ -98,12 +98,12 @@ function draw(){
     
         
  } else if(energy >= maxEnergy) {
-    textFont(fontMetaBold);      
-    textSize(height/25);
+    textFont(fontOCRB);      
+    textSize(height/30);
     textAlign(CENTER);
     textStyle(BOLD);
     text("ALSO THE STRONGEST EARTHQUAKE",width/2, height - height/2);
-    text("ISN'T STRONG AS YOU!",width/2, height - height/1.7);
+    text("ISN'T STRONG AS YOU!",width/2, height - height/2.2);
     
     fill(0);
     noStroke();
