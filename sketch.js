@@ -104,48 +104,47 @@ function draw(){
          
          image(myImage1,0,0,windowWidth,windowHeight);
          //tap on the arrow
-         if(touchX >  0  && touchX <  width && touchY > height/2  && touchY < height){   
+         /*if(touchX >  0  && touchX <  width && touchY > height/2  && touchY < height){   
            image(Cover,0,0,windowWidth,windowHeight);
             energy = 0;
-         }
+         }*/
        } else if(magnitude > 6 && magnitude <= 7){
          
          image(myImage2,0,0,windowWidth,windowHeight);
          //tap on the arrow
-         if(touchX >  0  && touchX <  width && touchY > height/2  && touchY < height){   
+         /*if(touchX >  0  && touchX <  width && touchY > height/2  && touchY < height){   
            image(Cover,0,0,windowWidth,windowHeight);
             energy = 0;
-          }
+          }*/
           
        } else if(magnitude > 7 && magnitude <= 8){
          image(Mexico,0,0,windowWidth,windowHeight);
          //tap on the arrow
-         if(touchX >  0  && touchX <  width && touchY > height/2  && touchY < height){   
+         /*if(touchX >  0  && touchX <  width && touchY > height/2  && touchY < height){   
            image(Cover,0,0,windowWidth,windowHeight);
-            energy = 0;
-         }        
+            energy = 0;         }       */ 
                  
        } else if(magnitude > 8 && magnitude <= 8.5){
         image(Indonesia,0,0,windowWidth,windowHeight);
          //tap on the arrow
-         if(touchX >  0  && touchX <  width && touchY > height/2  && touchY < height){   
+        /* if(touchX >  0  && touchX <  width && touchY > height/2  && touchY < height){   
            image(Cover,0,0,windowWidth,windowHeight);
             energy = 0;
-         }
+         }*/
        } else if(magnitude > 8.5 && magnitude <= 9){
          image(Japan,0,0,windowWidth,windowHeight);
          //tap on the arrow
-         if(touchX >  0  && touchX <  width && touchY > height/2  && touchY < height){   
+        /* if(touchX >  0  && touchX <  width && touchY > height/2  && touchY < height){   
            image(Cover,0,0,windowWidth,windowHeight);
             energy = 0;
-         }
+         }*/
        } else if(magnitude > 9 && magnitude <= 10){
          image(Chile,0,0,windowWidth,windowHeight);
          //tap on the arrow
-         if(touchX >  0  && touchX <  width && touchY > height/2  && touchY < height){   
+         /*if(touchX >  0  && touchX <  width && touchY > height/2  && touchY < height){   
            image(Cover,0,0,windowWidth,windowHeight);
             energy = 0;
-         }
+         }*/
        }
    }   
    //tap on TRY AGAIN 
