@@ -108,6 +108,7 @@ function draw(){
     textStyle(BOLD);
     text("TRY AGAIN",width/4, height - height/15);
     
+    //tap on TRY AGAIN 
      if(touchX > width/4 - width/7 && touchX < width/4 + width/7 && touchY > height - height/15 - width/7 && touchY <  height - height/15 + width/7){   
        
        image(Cover,0,0,windowWidth,windowHeight); 
@@ -117,29 +118,52 @@ function draw(){
          
   }
         
-   
+   //tap on SEE RESULT
     if(touchX > width/1.3 - width/7 && touchX < width/1.3 + width/7 && touchY > height - height/15- width/7 && touchY < height - height/15 + width/7){   
        
-      if (magnitude <= 5){
+      if (magnitude <= 6){
          
          image(myImage1,0,0,windowWidth,windowHeight);
-         textSize(height/30);
-         textStyle(BOLD);
-         text("BACK", width/15, height/2);
-         if(touchX >  width/15 - width/5 && touchX <  width/15 + width/5 && touchY >height/2 - width/5 && touchY < height/2+ width/5){   
+         //tap on the arrow
+         if(touchX >  0  && touchX <  width && touchY > height/2  && touchY < height){   
            image(Cover,0,0,windowWidth,windowHeight);
          }
-       } else {
+       } else if(magnitude > 6 && magnitude <= 7){
          
          image(myImage2,0,0,windowWidth,windowHeight);
-         
-         if(touchX >  width/15 - width/5 && touchX <  width/15 + width/5 && touchY >height/2 - width/5 && touchY < height/2+ width/5){   
+         //tap on the arrow
+         if(touchX >  0  && touchX <  width && touchY > height/2  && touchY < height){   
            image(Cover,0,0,windowWidth,windowHeight);
           }
-       } 
-       
+          
+       } else if(magnitude > 7 && magnitude <= 8){
+         image(myImage1,0,0,windowWidth,windowHeight);
+         //tap on the arrow
+         if(touchX >  0  && touchX <  width && touchY > height/2  && touchY < height){   
+           image(Cover,0,0,windowWidth,windowHeight);
+         }        
+                 
+       } else if(magnitude > 8 && magnitude <= 8.5){
+        image(myImage1,0,0,windowWidth,windowHeight);
+         //tap on the arrow
+         if(touchX >  0  && touchX <  width && touchY > height/2  && touchY < height){   
+           image(Cover,0,0,windowWidth,windowHeight);
+         }
+       } else if(magnitude > 8.5 && magnitude <= 9){
+         image(myImage1,0,0,windowWidth,windowHeight);
+         //tap on the arrow
+         if(touchX >  0  && touchX <  width && touchY > height/2  && touchY < height){   
+           image(Cover,0,0,windowWidth,windowHeight);
+         }
+       } else if(magnitude > 9 && magnitude <= 10){
+         image(myImage1,0,0,windowWidth,windowHeight);
+         //tap on the arrow
+         if(touchX >  0  && touchX <  width && touchY > height/2  && touchY < height){   
+           image(Cover,0,0,windowWidth,windowHeight);
+         }
+       }
    }   
-    
+   //tap on TRY AGAIN 
    if(touchX > width/4 - width/7 && touchX < width/4 + width/7 && touchY > height - height/15 - width/7 && touchY <  height - height/15 + width/7){   
        
      image(Cover,0,0,windowWidth,windowHeight);
@@ -172,8 +196,8 @@ function QuakeDots(){
     this.xdot = random(width/2 - d, width/2 + d); //according to ellipse area
     this.ydot = random(height/2 - d, height/2 + d); //according to ellipse area
     this.diameter = 7;
-    this.speed = 4; //according to magnitude
-
+    this.speed = 5;
+   
     this.move = function(){
     this.xdot += random(-this.speed,this.speed);
     this.ydot += random(-this.speed,this.speed);
